@@ -1,0 +1,39 @@
+<h4>Edit Member</h4>
+<div class="form-group">
+  <label>Edit Member Name:</label>
+  <input [(ngModel)]="selectedMember.name">
+</div>
+
+<div class="form-group">
+  <label>Edit Member Bio:</label>
+  <textarea [(ngModel)]="selectedMember.bio"></textarea>
+</div>
+
+<div class="form-group">
+  <label>Edit Member Nickname:</label>
+  <input [(ngModel)]="selectedMember.nickName">
+</div>
+
+<div class="form-group">
+  <label>Edit Member Number:</label>
+  <input type="text" [(ngModel)]="selectedMember.number">
+</div>
+
+<div class="form-group">
+  <label>Edit Member Photo:</label>
+  <input [(ngModel)]="selectedMember.imgUrl">
+</div>
+
+<div class="form-group">
+  <label>Edit Member Position:</label>
+  <input [(ngModel)]="selectedMember.position">
+</div>
+
+<div class="form-group">
+  <label>Edit Member Phone Number:</label>
+  <input [(ngModel)]="selectedMember.phone">
+</div>
+
+<button class="btn btn-default" (click)="beginUpdatingMember(selectedMember)">Update</button>
+
+<button class="btn btn-default" (click)="beginDeletingMember(selectedMember)">Delete</button>

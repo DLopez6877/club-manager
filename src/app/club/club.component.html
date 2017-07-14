@@ -4,14 +4,11 @@
     <img src="{{member.imgUrl}}" alt="profile pic">
     <div class="well">
       <h3>{{member.nickName}}</h3>
+      <h2>{{member.number}}</h2>
       <div *ngIf="currentRoute === '/club'">
-        {{member.position}}
+        <p>{{member.bio}}</p>
       </div>
     </div>
-    <!-- <div *ngIf="currentRoute === '/admin'">
-      {{member.name}}
-      <hr>
-      <app-edit-album [selectedMember]="member"></app-edit-album>
-    </div> -->
   </a>
+  <app-edit-member *ngIf="currentRoute === '/admin'" [selectedMember]="member"></app-edit-member>
 </div>
