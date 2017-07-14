@@ -1,3 +1,49 @@
-<p>
-  admin works!
-</p>
+<div class="form-simulation">
+  <h3>Add New Member to Club</h3>
+  <div class="form-group">
+    <label>New Member Full Name:</label>
+    <input #newName class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label>New Member Nick Name</label>
+    <textarea #newNickName class="form-control"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>New Member Bio:</label>
+    <textarea #newBio class="form-control"></textarea>
+  </div>
+
+  <div class="form-group">
+    <label>New Member Jersey Number:</label>
+    <input type="number" #newName class="form-control">
+  </div>
+
+  <div class="form-group">
+    <label>New Member Picture:</label>
+    <input onClick="this.select();" #newImgUrl class="form-control" placeholder="Https://">
+  </div>
+
+  <div class="form-group">
+    <label>New Member Position:</label>
+    <select #newPosition class="form-control">
+      <option value="Forward">Forward</option>
+      <option value="Midfielder">Midfielder</option>
+      <option value="Defender">Defender</option>
+      <option value='GK'>GK</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>New Member Phone Number:</label>
+    <input #newPhone class="form-control">
+  </div>
+
+
+  <button (click)="submitForm(newName.value, newBio.value, newNickName.value, newNumber.value, newImgUrl.value, newPosition.value, newPhone.value); newName.value=''; newBio.value=''; newNickName.value=''; newNumber.value=''; newImgUrl.value=''; newPosition.value=''; newPhone.value=''" class="btn btn-default">Add</button>
+</div>
+
+<div>
+  <app-members></app-members>
+</div>

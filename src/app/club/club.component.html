@@ -1,12 +1,17 @@
 <h2>Victorious Secret</h2>
-
 <div *ngFor="let member of members | async" class="panel panel-default">
-  <div class="panel-body">
-    <h3 (click)="goToDetailPage(member)"><em>{{member.name}}</em> by {{member.nickName}}</h3>
-    <div *ngIf="currentRoute === '/admin'">
+  <a (click)="goToDetailPage(member)" class="panel-body">
+    <img src="{{member.imgUrl}}" alt="profile pic">
+    <div class="well">
+      <h3>{{member.nickName}}</h3>
+      <div *ngIf="currentRoute === '/club'">
+        {{member.position}}
+      </div>
+    </div>
+    <!-- <div *ngIf="currentRoute === '/admin'">
       {{member.name}}
       <hr>
-      <!-- <app-edit-album [selectedMember]="member"></app-edit-album> -->
-    </div>
-  </div>
+      <app-edit-album [selectedMember]="member"></app-edit-album>
+    </div> -->
+  </a>
 </div>

@@ -1,18 +1,18 @@
 import { Component, OnInit } from '@angular/core';
-import { Members } from '../members.model';
+import { Member } from '../members.model';
 import { Router } from '@angular/router';
 import { MemberService } from './../member.service';
 import { FirebaseListObservable } from 'angularfire2/database';
 
 @Component({
-  selector: 'app-marketplace',
-  templateUrl: './marketplace.component.html',
-  styleUrls: ['./marketplace.component.css'],
+  selector: 'app-club',
+  templateUrl: './club.component.html',
+  styleUrls: ['./club.component.scss'],
   providers: [MemberService]
 })
 
 
-export class MarketplaceComponent implements OnInit {
+export class ClubComponent implements OnInit {
   members: FirebaseListObservable<any[]>;
   currentRoute: string = this.router.url;
 
@@ -23,6 +23,6 @@ export class MarketplaceComponent implements OnInit {
   }
 
   goToDetailPage(clickedMember) {
-      this.router.navigate(['members', clickedMember.$key]);
+    this.router.navigate(['members', clickedMember.$key]);
   };
 }

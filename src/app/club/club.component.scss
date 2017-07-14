@@ -1,0 +1,16 @@
+img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.well {
+  margin: 0 0 0 20px;
+  text-align: center;
+}
+
+.panel, .panel-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
