@@ -1,0 +1,26 @@
+{ "members": [{
+    "name": "Daniel Lopez",
+    "nickName": "Flopez",
+    "number": 10,
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Football_iu_1996.jpg/1200px-Football_iu_1996.jpg",
+    "position": "forward",
+    "phone": "360-360-3603",
+    "id": "1"
+    }, {
+    "name": "Jared Eiseman",
+    "nickName": "J-Rad",
+    "number": 1,
+    "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccer_goalkeeper.jpg/1200px-Soccer_goalkeeper.jpg",
+    "position": "GK",
+    "phone": "123-456-7890",
+    "id": "2"
+    }, {
+    "name": "Shayma Taha",
+    "nickName": "Goose",
+    "number": 14,
+    "imgUrl": "https://i.ytimg.com/vi/amdin8QXTMQ/maxresdefault.jpg",
+    "position": "Defender",
+    "phone": "888-867-5309",
+    "id": "3"
+  }]
+}
