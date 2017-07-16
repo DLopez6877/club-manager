@@ -14,22 +14,22 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Setup/Installation Requirements
 
-* Clone the repository (https://github.com/jaredeiseman/clubmanager.git)
-* Run 'npm install' in your chosen terminal application
-* Run 'bower install' in your chosen terminal application
-* Run 'ng serve' in your chosen terminal application for a development server.
-  * ng build --prod will create a minified, deployable version of the project in the dist folder at root level
+* Clone the repository [click here](https://github.com/DLopez6877/club-manager)
+* Change directory with '$ cd club-manager'
+* Run '$ npm install'
+* Run '$ bower install'
 * Login to Firebase and initialize a new project, choosing the option to integrate firebase into web app from the console
 * Create 'api-keys.ts' in the src/app/ directory
 * Add your firebase credentials to 'api-keys.ts' in the following format:
-export var masterFirebaseConfig = {
-  apiKey: "xxxxxx",
-  authDomain: "xxxxx.firebaseapp.com",
-  databaseURL: "https://xxxxxxx.firebaseio.com",
-  projectId: "xxxxxxxxxx",
-  storageBucket: "xxxxxxxxx.appspot.com",
-  messagingSenderId: "xxxxxxxxxx"
+    export var masterFirebaseConfig = {
+    apiKey: "xxxxxx",
+    authDomain: "xxxxx.firebaseapp.com",
+    databaseURL: "https://xxxxxxx.firebaseio.com",
+    projectId: "xxxxxxxxxx",
+    storageBucket: "xxxxxxxxx.appspot.com",
+    messagingSenderId: "xxxxxxxxxx"
 };
+* Run '$ ng serve' --see below for more details
 
 ## Development server
 
